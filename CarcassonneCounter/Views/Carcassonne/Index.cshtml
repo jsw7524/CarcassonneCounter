@@ -1,12 +1,7 @@
 ﻿
 <html>
 <head>
-    <title>Carcassonne Tile Counter</title>
-    <script type="text/javascript" src="http://gc.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=OIyO3D7uH9gCB_Kf27vUaCZ9Q4KydQ37i_6lcclvC3yRoNpofwrzNJJ5GKRtOJSH" charset="UTF-8"></script>
-    <link rel="stylesheet" crossorigin="anonymous" href="http://gc.kis.v2.scr.kaspersky-labs.com/E3E8934C-235A-4B0E-825A-35A08381A191/abn/main.css?attr=aHR0cDovL2FtcGxpLmZpL2NhcmNhc3Nvbm5lLw" />
-    <style type="text/css"></style>
-
-
+    <title>Carcassonne Helper</title>
     <style>
         body {
             max-width: 600px;
@@ -33,8 +28,7 @@
 
 </head>
 <body>
-
-    <h1>Carcassonne Counter</h1>
+    <h1>Carcassonne Helper</h1>
     <table border="1">
         <tbody>
             <tr>
@@ -57,28 +51,26 @@
                     <img src="~/img/city3s.png" width="90" height="90" alt="city3s">
                     <p><span>1</span> / 1</p>
                 </td>
-
+            </tr>
+            <tr>
                 <td>
                     <img src="~/img/city3r.png" width="90" height="90" alt="city3r">
                     <p><span>1</span> / 1</p>
                 </td>
-
                 <td>
                     <img src="~/img/city3sr.png" width="90" height="90" alt="city3sr">
                     <p><span>2</span> / 2</p>
                 </td>
-            </tr>
-            <tr>
                 <td>
                     <img src="~/img/road3.png" width="90" height="90" alt="road3">
                     <p><span>4</span> / 4</p>
                 </td>
-
                 <td>
                     <img src="~/img/city2we.png" width="90" height="90" alt="city2we">
                     <p><span>1</span> / 1</p>
                 </td>
-
+            </tr>
+            <tr>
                 <td>
                     <img src="~/img/city2wes.png" width="90" height="90" alt="city2wes">
                     <p><span>2</span> / 2</p>
@@ -93,12 +85,10 @@
                     <img src="~/img/city2nw.png" width="90" height="90" alt="city2nw">
                     <p><span>3</span> / 3</p>
                 </td>
-
                 <td>
                     <img src="~/img/city2nws.png" width="90" height="90" alt="city2nws">
                     <p><span>2</span> / 2</p>
                 </td>
-            </tr>
             <tr>
                 <td>
                     <img src="~/img/city2nwr.png" width="90" height="90" alt="city2nwr">
@@ -119,29 +109,26 @@
                     <img src="~/img/city11ne.png" width="90" height="90" alt="city11ne">
                     <p><span>2</span> / 2</p>
                 </td>
-
+            </tr>
+            <tr>
                 <td>
                     <img src="~/img/city11we.png" width="90" height="90" alt="city11we">
                     <p><span>3</span> / 3</p>
                 </td>
-
                 <td>
                     <img src="~/img/cloisterr.png" width="90" height="90" alt="cloisterr">
                     <p><span>2</span> / 2</p>
                 </td>
-            </tr>
-
-            <tr>
                 <td>
                     <img src="~/img/cloister.png" width="90" height="90" alt="cloister">
                     <p><span>4</span> / 4</p>
-                    </p>
-
+                </td>
                 <td>
                     <img src="~/img/city1.png" width="90" height="90" alt="city1">
                     <p><span>5</span> / 5</p>
                 </td>
-
+            </tr>
+            <tr>
                 <td>
                     <img src="~/img/city1rse.png" width="90" height="90" alt="city1rse">
                     <p><span>3</span> / 3</p>
@@ -151,30 +138,20 @@
                     <img src="~/img/city1rsw.png" width="90" height="90" alt="city1rsw">
                     <p><span>3</span> / 3</p>
                 </td>
-
                 <td>
                     <img src="~/img/city1rswe.png" width="90" height="90" alt="city1rswe">
                     <p><span>3</span> / 3</p>
                 </td>
-
                 <td>
                     <img src="~/img/city1rwe.png" width="90" height="90" alt="city1rwe">
                     <p><span>3</span> / 3</p>
                 </td>
-
             </tr>
         </tbody>
     </table>
-
-    <p class="Instructions">Click to mark a tile used, shift+click to revert.</p>
-
-    <p>Total tiles left: <span id="total"></span></p>
-
-    <p><a href="ic.html">Show with Inns and Cathedrals</a></p>
-
-    <p class="footer">Carcassonne is a tile placement game designed by Klaus-Jurgen Wrede, and published by <a href="http://www.hans-im-glueck.de">Hans-im-Gluck</a> and <a href="http://www.riograndegames.com">Rio Grande Games</a>.</p>
-
-    <p class="footer">This counter tool is based on the <a href="http://russcon.org/RussCon/carcassonne/tiles.html">Carcassonne Tile Distribution page</a> by <a href="http://www.kofightclub.com">Russ Williams</a>. Leave any comments or feedback on the tool <a href="http://blog.ampli.fi/carcassonne-tile-counter/">in the blog</a>.</p>
-
+    <div>
+        <button onclick="UndoClick()" id="button_undo" type="button"><div><span id="total">72</span> titles remain</div>Undo Click</button>
+    </div>
 </body>
 </html>
+
